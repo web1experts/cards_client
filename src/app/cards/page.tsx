@@ -10,7 +10,7 @@ export default function Home() {
 
   // Fetch tasks from the API
   const fetchTasks = async () => {
-    setLoading(true); // Show loader
+    setLoading(true); 
     try {
       const response = await fetch("/api/cards"); // Fetch from the GET API
       if (!response.ok) throw new Error("Failed to fetch tasks");
